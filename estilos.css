@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ----- Encabezado ----- */
+.encabezado {
+    background-image: url("medicina_tradicional.jpeg");
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a.activo,
+.menu ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Contenedor principal de la sección */
+.medicina-tradicional-section {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #f0f0f0; /* Fondo gris claro, similar al del diseño */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Configuración de Flexbox para colocar la imagen y el texto lado a lado */
+    display: flex;
+    overflow: hidden; /* Importante para que la imagen se vea bien dentro del contenedor */
+}
+
+/* Sección de la Imagen */
+.image-container {
+    flex: 2; /* Le da más espacio a la imagen (por ejemplo, 60% del ancho) */
+    position: relative;
+    max-width: 60%; /* Establecer un ancho máximo para la imagen */
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    display: block;
+}
+
+/* Sección del Texto y Controles */
+.text-content {
+    flex: 1; /* Le da menos espacio al texto (por ejemplo, 40% del ancho) */
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.title {
+    font-family: 'Playfair Display', serif; /* Usar una fuente elegante similar */
+    font-size: 2.2em;
+    color: #4a545c; /* Color de texto oscuro, similar al ejemplo */
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #cc4d4d; /* Color rojo o salmón para el subtítulo */
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+/* Estilos de las flechas de control */
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+.arrow-button {
+    background-color: #6da2bf; /* Color azul, similar al ejemplo */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.arrow-button:hover {
+    background-color: #4a7c97;
+}
+
+
+/* ----- Contenedor principal ----- */
+.contenedor{
+    padding: auto;
+}
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para un efecto de "tarjeta" si es necesario */
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal para la imagen y el texto (usando Flexbox) */
+.info-card {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+    gap: 30px;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+/* Sección de la Imagen */
+.image-section {
+    flex: 1;
+    min-width: 300px; /* Ancho mínimo para la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px; /* Pequeño ajuste visual */
+}
+
+.image-grid {
+    width: 250px;
+    height: 250px;
+    display: grid;
+    /* Grid de 3x2 para acomodar las 6 "imágenes" */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    /* El borde redondeado y el overflow hidden dan la forma circular */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el círculo */
+    transform: rotate(10deg); /* Ligeramente rotado, como en el ejemplo */
+}
+
+/* Estilos de las "Imágenes" individuales (reemplaza con tus propias URLs si las tienes) */
+.image-item {
+    background-size: cover;
+    background-position: center;
+    /* Asegúrate de que las imágenes se llenen completamente en su área */
+}
+
+/* Colores o imágenes de fondo para simular la composición del collage */
+.img-1 { background-color: #ffe0b2; background-image: url('1.jpg'); }
+.img-2 { background-color: #c8e6c9; background-image: url('2.webp'); }
+.img-3 { background-color: #b3e5fc; background-image: url('3.png'); }
+.img-4 { background-color: #ffccbc; background-image: url('4.webp'); }
+.img-5 { background-color: #e1bee7; background-image: url('5.jpg'); }
+.img-6 { background-color: #d7ccc8; background-image: url('6.webp'); }
+
+
+/* Sección de Texto */
+.text-section {
+    flex: 2; /* Ocupa más espacio que la imagen */
+    min-width: 350px; /* Ancho mínimo para el texto */
+    padding: 10px 0;
+}
+
+.text-section h2 {
+    color: #e57373; /* Color de pregunta, similar al ejemplo */
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.text-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Botón "Más información" */
+.more-info-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e53935; /* Color rojo fuerte */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.more-info-button:hover {
+    background-color: #c62828; /* Rojo más oscuro al pasar el ratón */
+}
+
+.contenedor {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.izquierda {
+    flex: 3;
+}
+
+.derecha {
+    flex: 1;
+}
+
+/* ----- Tarjetas ----- */
+.grid-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    /* Dos columnas de igual tamaño */
+    grid-template-columns: 1fr 1fr; 
+    /* Espacio entre los módulos */
+    gap: 40px; 
+}
+
+/* Estilo para cada módulo de información (cada "tarjeta") */
+.module {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    /* Sombra sutil para destacar el módulo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+}
+
+/* Título de cada módulo */
+.module-title {
+    font-family: Georgia, serif; /* Usamos una fuente con serifa para un estilo elegante como en el ejemplo */
+    font-size: 1.8em;
+    color: #4a545c; /* Color de texto oscuro */
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Contenido dentro del módulo (Imagen y Texto lado a lado) */
+.module-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Alinea la imagen y el texto en la parte superior */
+}
+
+/* Contenedor de la imagen */
+.image-box {
+    /* Darle un tamaño fijo a la caja de la imagen, similar al ejemplo */
+    width: 100px; 
+    height: 100px;
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Asegura que la imagen se vea completa */
+    display: block;
+}
+
+/* Estilo del texto */
+.module-text {
+    font-size: 1em;
+    line-height: 1.5;
+    color: rgb(83, 83, 221);
+}
+
+/* Estilos de color de fondo para la sección de la imagen
+   (Opcional, si las imágenes tienen un fondo de color) */
+.img-constelaciones { background-color: #f0f8ff; }
+.img-bioenergetica { background-color: #fffacd; }
+.img-reiki { background-color: #f0f0f0; }
+.img-ayurvedica { background-color: #faf0e6; }
+
+
+/* ----- Botones ----- */
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #cc6600;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #ff9933;
+}
+
+/* ----- Sidebar ----- */
+.widget {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.widget h3 {
+    color: #cc6600;
+}
+
+/* ----- Pie de página ----- */
+.pie {
+    background-image: url("images.jpeg");
+    color: white;
+    text-align: center;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pie .boletin input {
+    padding: 8px;
+    margin: 10px;
+}
+
+.pie .boletin button {
+    background: #cc6600;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pie .social a {
+    color: #ff9933;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.footer-bottom-content {
+    /* Color de fondo oscuro, similar al ejemplo */
+    background-color: #364954; 
+    padding: 30px 20px;
+    text-align: center; /* Centra el texto */
+}
+
+.copyright-text {
+    font-size: 0.9em;
+    /* Color de texto azul/claro, similar al ejemplo */
+    color: #8db5c4; 
+    margin: 0; /* Remueve el margen por defecto del párrafo */
+}
