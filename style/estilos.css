@@ -7,7 +7,7 @@ body {
 
 /* ----- Encabezado ----- */
 .encabezado {
-    background-image: url("medicina_tradicional.jpeg");
+    background-image: url("../img/medicina_tradicional.jpeg");
     color: white;
     padding: 20px;
     text-align: center;
@@ -173,12 +173,12 @@ h1 {
 }
 
 /* Colores o imágenes de fondo para simular la composición del collage */
-.img-1 { background-color: #ffe0b2; background-image: url('1.jpg'); }
-.img-2 { background-color: #c8e6c9; background-image: url('2.webp'); }
-.img-3 { background-color: #b3e5fc; background-image: url('3.png'); }
-.img-4 { background-color: #ffccbc; background-image: url('4.webp'); }
-.img-5 { background-color: #e1bee7; background-image: url('5.jpg'); }
-.img-6 { background-color: #d7ccc8; background-image: url('6.webp'); }
+.img-1 { background-color: #ffe0b2; background-image: url('../img/1.jpg'); }
+.img-2 { background-color: #c8e6c9; background-image: url('../img/2.webp'); }
+.img-3 { background-color: #b3e5fc; background-image: url('../img/3.png'); }
+.img-4 { background-color: #ffccbc; background-image: url('../img/4.webp'); }
+.img-5 { background-color: #e1bee7; background-image: url('../img/5.jpg'); }
+.img-6 { background-color: #d7ccc8; background-image: url('../img/6.webp'); }
 
 
 /* Sección de Texto */
